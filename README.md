@@ -1,0 +1,1 @@
+This is a quick dockerfile written for https://github.com/jamesplotts/simpleide so I can edit VB.net projects without it polluting my whole entire computer.
