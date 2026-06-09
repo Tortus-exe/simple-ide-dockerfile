@@ -6,8 +6,9 @@ if [ -e $contents ]; then
         -e DISPLAY=$DISPLAY \
         -e XAUTHORITY=/tmp/.Xauthority \
         -v $XAUTHORITY:/tmp/.Xauthority:ro \
+        -v $HOME/.Xauthority:/home/app/.Xauthority:ro \
         -v /tmp/.X11-unix:/tmp/.X11-unix:ro \
-        -v $1:/home/app/contents \
+        -v "$1":/home/app/contents \
         --device /dev/dri \
         --net=host \
         simpleide
